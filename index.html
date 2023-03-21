@@ -25,7 +25,6 @@
         
         #right {
             width: 440px;
-            background-color: aqua;
         }
         
         #left {
@@ -155,6 +154,86 @@
             padding: 5px;
             border-radius: 10px;
         }
+
+        /* right */
+        .pnl_chat{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .con_paticipant{
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 20px;
+            border-bottom: 1px solid darkgrey;
+        }
+        .pnl_lb_paticipant_add{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .pnl_lb_paticipant{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .lb_add{
+            color: blueviolet;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+            width: 40px;
+            height: 20px;
+            padding: 10px;
+        }
+        .lb_4{
+            margin-left: 5px;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            padding-left: 5px;
+            background-color: darkorchid;
+        }
+        .pnl_user{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lb_user{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .text_avatar{
+            margin-left: 10px;
+        }
+        .lb_item{
+            margin-top: 20px;
+        }
+        .con_chat{
+            margin-left: 25px;
+            margin-top: 50px;
+        }
+        .pnl_user_chat .lb_user{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .pnl_user_chat .text_avatar{
+            margin-left: 10px;
+        }
+        .pnl_user_chat p{
+            margin-left: 50px;
+        }
+        .pnl_comment{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            background-color: beige;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -229,7 +308,101 @@
                     </div>
                 </div>
             </div>
-            <div id="right">right</div>
+            <div id="right">
+                <div class="con_paticipant">
+                    <div class="pnl_lb_paticipant_add">
+                        <div class="pnl_lb_paticipant">
+                            <div>Participants</div>
+                            <div class="lb_4">4</div>
+                        </div>
+                        <div class="lb_add">+ Add</div>
+                    </div>
+                    <div class="pnl_user">
+                        <div class="lb_user">
+                            <img src="/avatar.png" alt="">
+                            <div class="text_avatar">hblcnd</div>
+                        </div>
+                        <div class="lb_item">
+                            <img src="/mic1.png" alt="">
+                            <img src="/cam_small.png" alt="">
+                            <img src="/3 cham_2.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="pnl_user">
+                        <div class="lb_user">
+                            <img src="/avatar 1326.png" alt="">
+                            <div class="text_avatar">dfrfsc</div>
+                            </div>
+                        <div class="lb_item">
+                            <img src="/mic1.png" alt="">
+                            <img src="/cam_small.png" alt="">
+                            <img src="/3 cham_2.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="pnl_user">
+                        <div class="lb_user">
+                            <img src="/avatar 1327.png" alt="">
+                            <div class="text_avatar">ecdc</div>
+                        </div>
+                        <div class="lb_item">
+                            <img src="/mic1.png" alt="">
+                            <img src="/cam_small.png" alt="">
+                            <img src="/3 cham_2.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="pnl_user">
+                        <div class="lb_user">
+                            <img src="/avatar 1328.png" alt="">
+                            <div class="text_avatar">dasv</div>
+                        </div>
+                        <div class="lb_item">
+                            <img src="/mic1.png" alt="">
+                            <img src="/cam_small.png" alt="">
+                            <img src="/3 cham_2.PNG" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="con_chat">
+                    <div class="pnl_chat">CHAT</div>
+                    <div class="pnl_user_chat">
+                        <div class="lb_user">
+                            <img src="/avatar 1323.png" alt="">
+                            <div class="text_avatar">yonsa</div>
+                        </div>
+
+                        <p>hiiii</p>
+                    </div>
+                    <div class="pnl_user_chat">
+                        <div class="lb_user">
+                            <img src="/avatar 1326.png" alt="">
+                            <div class="text_avatar">lise</div>
+                        </div>
+
+                        <p>xin chao </p>
+                    </div>
+                    <div class="pnl_user_chat">
+                        <div class="lb_user">
+                            <img src="/avatar 1327.png" alt="">
+                            <div class="text_avatar">majs</div>
+                        </div>
+
+                        <p>hello </p>
+                    </div>
+                    <div class="pnl_user_chat">
+                        <div class="lb_user">
+                            <img src="/avatar 1329.png" alt="">
+                            <div class="text_avatar">layyy</div>
+                        </div>
+
+                        <div class="pnl_comment">
+                            <input type="text" placeholder="add typing" >
+                            <img src="icon.PNG" alt="">
+                            <img src="/send.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
